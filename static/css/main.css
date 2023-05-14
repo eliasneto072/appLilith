@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    border-left: 3px solid white;
+}
+header{
+    background: rgb(14, 1, 59);
+}
+.menu{
+    width: 27%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .menu a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    border: 1px solid white;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+}
+#verde:hover{
+    background-color: green;
+    transform: scale(1);
+}
+#vermelho:hover{
+    background-color: red;
+    transform: scale(1);
+}
+#azul:hover{
+    background-color: blue;
+    transform: scale(1);
+}
+footer{
+    width: 100%;
+    background-color: rgb(104, 66, 241);
+}

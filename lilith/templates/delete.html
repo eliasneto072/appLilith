@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block 'main' %}
+    <div style="color: white;">
+        <h1>Tem certeza disso?</h1>
+        <div>{{comentario.user}}</div>  
+        <textarea name="text">{{comentario.text}}</textarea>
+        <form action="{% url 'deleteView' comentario.id %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="SIM">
+            <a href="{% url 'listar' %}">NÃO</a>
+        </form>
+    </div>
+{% endblock 'main' %}
